@@ -2053,27 +2053,3 @@ body.edit-on .main-grid.gridlines .wgt{outline-offset:0}
 @keyframes upSpin{to{transform:rotate(360deg)}}
 
 
-/* ==========================================================
-   업로드한 커서 파일 전역 적용 수정 코드
-   ========================================================== */
-
-/* 1. 기본 전체 마우스 커서 설정 (화살표 커서 대신 업로드한 파일 적용) */
-body, html {
-  cursor: url('/path/to/your-uploaded-cursor.png'), auto !important;
-}
-
-/* 2. 링크, 버튼, 클릭 가능한 요소의 마우스 커서 설정 (손가락 모양 등) */
-a, button, select, summary, .k-select .cur, .user-chip, .brand, 
-.k-check, .k-radio, .k-toggle, .sw, .veil .cover, .tc-faces .fc, 
-.rp-room, .memo-list-item, .thr-fold, .thr-item, .char-card, 
-.rel-card, .au-item, .mrow, .qa-item, .cal-cell, .dy-row .hd, 
-.cm-card, .dt-card, .g-item, .ticket, .brow, .tag-row .tag, 
-.set-nav button, .tagside .tag {
-  cursor: url('/path/to/your-uploaded-pointer.png'), pointer !important;
-}
-
-/* 3. 드래그 중인 상태의 커서 설정 (필요시) */
-body.edit-on .page-main-wrap .wgt, 
-body.edit-on .page-main-wrap *:not(.rs):not(.rr) {
-  cursor: url('/path/to/your-uploaded-grab.png'), grab !important;
-}
